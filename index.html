@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title> Fictional Character Recognition </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body >
+    <center>
+        <h1>  Fictional Character Recognition  </h1>
+        <br> <br>
+        <h2>The model is trained to identify the following fictional characters: </h2>
+        <br> <br>
+        <h3>Isabelle Sophia Lightwood</h3>
+        <hr>
+        <h3>Alexander Gideon Lightwood </h3>
+        <hr>
+        <h3>Ginerva Molly Weasley</h3>
+        <hr>
+        <h3> Fred and George Weasley </h3>
+        <hr> <img src="IZZZYYYYY.jpg" width="250" height="300"> <br> <img src="Alec1.jpg" width="250" height="300"> <br> <img
+            src="Ginerva.jpg" width="250" height="275"> <br> <img src="FNG OFFICIAL.jfif" width="500" height="250">
+        <br><br>
+    
+        <div id="cam_output"> </div>
+        <br> <br>
+        <input id= "iput" placeholder= "Please paste the image address of the image of the character you want the computer to guess" style= "width: 700px"> <br> <br> 
+        <button onclick= "done()" class= "btn btn-succsess">Done</button>
+        <br> <br> <br>
+        <label> Uploaded file preview- </label>
+        <br>
+    <img id= "pic" src= "" width= "200" height= "200" alt= "Your picture will appear here">
+    <br> <br> <button onclick= "compare_now()" class= "btn btn-diri">Compare</button>  
+    <br> <br><p>Character: </p>
+        <span id="obj_name"></span>
+        <br> <br>
+        <p>Accuracy:</p>
+        <span id="acc"></span>
+    </center>
+</body>
+<script src= "main.js"></script>
+</html>
